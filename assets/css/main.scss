@@ -1,0 +1,97 @@
+---
+---
+
+@import "overkyll-jekyll-theme";
+@import "fonts";
+
+body {
+	font-family: "Nitti-Light", system, sans-serif;
+background-color: #fafafa;
+color: #1a1a1a;
+padding: 2em;
+}
+
+a, a:visited, a:active, a:hover, h1 {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, label, legend {
+	font-family: "Nitti-Light", system, sans-serif;
+  font-size: 1em;
+  color: #1a1a1a;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.title {
+	font-size: 1em;
+	color: #0F53FB;
+	float: left;
+	display: inline-flex;
+	width: 70%;
+	font-weight: bold;
+}
+
+.post {
+    margin: auto;
+    position: relative;
+
+}
+
+.nav-main li {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+
+a.site-title {
+	font-family: "Bagnard-Sans";
+	color: #0F53FB;
+}
+
+.site-header {
+	margin-top: 3em;
+	padding: 0;
+}
+
+.post-meta {
+	position: relative;
+	display: inline-block;
+	text-align: right;
+	margin: 0;
+	float: right;
+	color: #1a1a1a;
+	font-weight: bold;
+	width: 30%;
+}
+
+@media only screen and (max-width: 37.437em) {
+.nav-main {
+    overflow-y: hidden !important;
+    height: 40px !important;
+  	border: 0;
+}
+}
+
+
+
+ .wrapper {
+	 padding: 0em;
+}
+
+.site-header-top {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+}
