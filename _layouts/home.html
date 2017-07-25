@@ -5,8 +5,8 @@ layout: default
 {% assign post = site.posts.first %}
 
 <section class="post wrapper">
-  <div class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
   <p class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</p>
+  <div class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
 
 </section>
 

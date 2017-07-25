@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="wrapper">
-  <h1 class="title">{{ page.title }}</h1>
   {{ content }}
 </div>
+
+<script>
+$('.page-link').each(function() {
+    if($(this).attr('href') == window.location.pathname){
+        $(this).addClass('active');
+    }
+});
+</script>

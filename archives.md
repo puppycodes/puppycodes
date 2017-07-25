@@ -12,7 +12,7 @@ navigation: true
   {% if currentdate != yeardate %}
   </ul><!--/posts-archive-->
   {% endif %}
-  <h2 id="date-{{currentdate}}">{{ currentdate }}</h2>
+  <h2 id="date" class="{{currentdate}}">{{ currentdate }}</h2>
   <ul class="posts-archive">
   {% endif %}
   <li class="posts-archive__links"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
