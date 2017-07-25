@@ -27,9 +27,12 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
   margin-bottom: 40px;
 }
 
+.instantclick-bar {
+  background: #0f53fb !important;
+}
+
 .title {
 	font-size: 1em;
-	color: red;
 	display: inline-block;
 	font-weight: bold;
 }
@@ -41,6 +44,22 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 }
 
 
+.post-title {
+	margin: 0;
+	text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 37.437em) {
+  .nav-main {
+		overflow-y: visible !important;
+    height: 40px !important;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+
+	}
+
+	}
 
 .nav-main li {
     display: inline-block;
@@ -59,7 +78,7 @@ margin: 0;
 min-width: 100%;
 list-style: none;
 text-align: left;
-margin-top: 15px;
+margin-top: 20px;
 }
 
 a.site-title {
@@ -72,39 +91,40 @@ a.site-title {
 }
 
 a.page-link {
-font-size: 18px;
-color: #C0C0C0;
-padding-right: 10px;
+	font-size: 120%;
+	color: #C0C0C0;
+	padding-right: 10px;
 }
 
 a.page-link::before {
 	content: '#';
 }
 
+
+
 .post-meta {
+	font-size: 1em;
 	position: relative;
 	margin: 0;
 	color: #1a1a1a;
 	font-weight: bold;
 }
 
-
-
- .wrapper {
+.wrapper {
 	 padding: 0;
 	 margin: 0;
 }
 
 .site-header-top {
-	display: inline-block;
+	display: block;
 	position: relative;
-	width: 100%;
+  width: 100%;
+  margin-bottom: 5%;
+  height: auto;
 }
 
 .site-logo {
-	float: left;
-	font-size: 30px;
-	display: inline-block;
+	font-size: 140%;
 	width: 100%;
 	text-align: left;
 }
@@ -112,9 +132,14 @@ a.page-link::before {
 h2#date
  {
 	 margin: 0;
-	 text-decoration: underline;
  }
 
 a.active {
-	color: black;
+	color: #0F53FB;
+}
+
+.post-header {
+	opacity: 1;
+    text-decoration: underline;
+		margin-bottom: 5%;
 }
