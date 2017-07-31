@@ -3,22 +3,26 @@
 <nav class="pagination--prevnext" role="navigation">
 
   {% if page.previous %}
-  <div class="pagination--prev">
-    <a class="pagination--item" href="{{ page.previous.url }}">
-      {{ page.previous.title }}
-    </a>
-  </div>
+  <!-- <div class="pagination--prev">
+    <a class="pagination--item" href="{{ page.previous.url }}"> previous </a>
+  </div> -->
   {% endif %}
 
   {% if page.next %}
-  <div class="pagination--next">
-    <a class="pagination--item" href="{{ page.next.url }}">
-      {{ page.next.title }}
-    </a>
-  </div>
+  <!-- <div class="pagination--next">
+    <a class="pagination--item" href="{{ page.next.url }}"> next </a>
+  </div> -->
   {% endif %}
 
 </nav>
 {% endif %}
 
+<footer>
+<ul>
+  <li><span>👩🏻‍💻</span></li>
+  <li><a href="https://github.com/puppycodes"><img src="/assets/images/git.png"></a></li>
+  <li><a href="https://twitter.com/puppycodes"><img src="/assets/images/twitter.png"></a></li>
+  <li><a href="https://instagram.com/puppycodes"><img src="/assets/images/insta.png"></a></li>
+</ul>
 
+</footer>

