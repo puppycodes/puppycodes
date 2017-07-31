@@ -3,10 +3,18 @@ layout: default
 ---
 
 {% assign post = site.posts.first %}
-
+{% for post in site.posts %}
 <section class="post wrapper">
-  <div class="title"><a href="{{ post.url | relative_url }}">  <p class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</p> {{ post.title }}</a></div>
-
+  <div class="title">
+    <a href="{{ post.url | relative_url }}">
+    {{ post.title }}
+    <p class="post-meta">
+    <span>{{ post.date | date: "%d" }}</span>
+    <span>{{ post.date | date: "%m" }}</span>
+    <span>{{ post.date | date: "%y" }}</span>
+  </p>
+    </a>
+</div>
 </section>
-
+{% endfor %}
 {% include pagination.html %}

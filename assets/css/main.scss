@@ -21,10 +21,16 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 	font-family: "Nitti-Light", system, sans-serif;
   font-size: 1em;
   color: #1a1a1a;
-  font-weight: bold;
+  font-weight: 600;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 40px;
+}
+
+
+h5 {
+	margin-top: 40px;
+	font-weight: 600;
 }
 
 .instantclick-bar {
@@ -34,7 +40,7 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 .title {
 	font-size: 1em;
 	display: inline-block;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .post {
@@ -43,10 +49,31 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 
 }
 
+article.post a {
+	position: relative;
+	background-color: #cf0;
+	line-height: 3px;
+	width: auto;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	margin: auto;
+	display: block;
+}
+
+.post img {
+	-webkit-box-shadow: 10px 21px 49px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 21px 49px -5px rgba(0,0,0,0.75);
+box-shadow: 10px 21px 49px -5px rgba(0,0,0,0.75);
+margin-top: 40px;
+margin-bottom: 40px;
+}
 
 .post-title {
 	margin: 0;
-	text-decoration: underline;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 1em;
 }
 
 
@@ -82,7 +109,7 @@ margin-top: 20px;
 }
 
 a.site-title {
-	font-family: "Bagnard-Sans";
+	font-family: "Bagnard";
 	color: #0F53FB;
 }
 
@@ -92,26 +119,64 @@ a.site-title {
 
 a.page-link {
 	font-size: 120%;
-	color: #C0C0C0;
+	color: #1a1a1a;
 	padding-right: 10px;
+	font-weight: 100;
 }
 
 a.page-link::before {
 	content: '#';
 }
 
+.posts-archive__links a {
+color: #1a1a1a;
+font-weight: 500;
+}
+
+.posts-archive > li:not(:last-child):after {
+    content: '';
+}
+
+.posts-archive li {
+    display: block;
+    position: relative;
+}
 
 
 .post-meta {
-	font-size: 1em;
 	position: relative;
-	margin: 0;
-	color: #1a1a1a;
+	color: #ccc;
 	font-weight: bold;
+	display: inline-block;
+	font-size: .9em;
+	padding-left: 10px;
+	margin-bottom: 0;
+	line-height: 0px;
+	margin: auto;
+
 }
 
+.post-meta span:nth-child(1) {
+	color: #f00;
+	background-color: #ffc0cb;
+}
+
+.post-meta span:nth-child(2) {
+	color: #00f;
+	background-color: #fff;
+}
+
+.post-meta span:nth-child(3) {
+	color: #808080;
+	background-color: #ff0;
+}
+
+
+
 .wrapper {
-	 padding: 0;
+	 padding-left: 0;
+	 padding-right: 0;
+	 max-width: inherit;
 	 margin: 0;
 }
 
@@ -132,6 +197,14 @@ a.page-link::before {
 h2#date
  {
 	 margin: 0;
+	 position: relative;
+background-color: #cf0;
+line-height: 3px;
+width: auto;
+padding-right: 5px;
+padding-bottom: 10px;
+margin: auto;
+display: inline-block;
  }
 
 a.active {
@@ -140,6 +213,10 @@ a.active {
 
 .post-header {
 	opacity: 1;
-    text-decoration: underline;
+    text-decoration: none;
 		margin-bottom: 5%;
+}
+
+.post {
+	padding-bottom: 20px;
 }
