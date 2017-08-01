@@ -29,7 +29,7 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 
 
 h5 {
-	margin-top: 40px;
+	margin-top: 25px;
 	font-weight: 600;
 }
 
@@ -38,14 +38,18 @@ h5 {
 }
 
 .title {
-	font-size: 1em;
 	display: inline-block;
 	font-weight: 500;
+}
+
+.title a {
+	    font-size: 17px;
 }
 
 .post {
     margin: auto;
     position: relative;
+		width: 100%;
 
 }
 
@@ -81,6 +85,19 @@ margin-bottom: 40px;
 	font-size: 1em;
 }
 
+main {
+	max-width: 800px;
+	width: 100%;
+}
+
+.highlighter-rouge .highlight {
+    background: #eef;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 37.437em) {
   .nav-main {
@@ -96,12 +113,11 @@ margin-bottom: 40px;
 .nav-main li {
     display: inline-block;
     text-align: center;
-    margin: 0;
     padding: 0;
 }
 
-.nav-main {
-
+.nav-main ul li {
+	padding-bottom: 15px;
 }
 
 .nav-main ul {
@@ -120,17 +136,27 @@ a.site-title {
 
 .site-header {
 	padding: 0;
+	margin-bottom: 0;
 }
 
 a.page-link {
-	font-size: 120%;
+  font-size: 1em;
 	color: #1a1a1a;
-	padding-right: 10px;
+	padding-right: 15px;
 	font-weight: 100;
 }
 
 a.page-link::before {
 	content: '#';
+}
+
+.posts-archive__links {
+	width: 100%;
+	float: left;
+}
+
+.posts-archive li {
+	    border-bottom: 2px solid #fff;
 }
 
 .posts-archive__links a {
@@ -147,6 +173,17 @@ font-weight: 500;
     position: relative;
 }
 
+.posts {
+	display: inline-block;
+}
+
+.embed-container {
+	margin-bottom: 25px;
+}
+
+p {
+  font-size: .9em;
+}
 
 .post-meta {
 	position: relative;
@@ -180,18 +217,14 @@ font-weight: 500;
 
 
 .wrapper {
-	 padding-left: 0;
-	 padding-right: 0;
 	 max-width: inherit;
 	 margin: 0;
+	 padding-left: 0;
+	 display: inline-block;
 }
 
 .site-header-top {
-	display: block;
-	position: relative;
-  width: 100%;
-  margin-bottom: 5%;
-  height: auto;
+    padding-left: 0;
 }
 
 .site-logo {
@@ -219,8 +252,10 @@ a.active {
 
 .post-header {
 	opacity: 1;
-    text-decoration: none;
-		margin-bottom: 5%;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+	 margin-bottom: 20px;
 
 }
 
@@ -230,6 +265,7 @@ a.active {
 
 .post {
 	padding-bottom: 20px;
+	padding-left: 0;
 }
 
 .pagination--item {

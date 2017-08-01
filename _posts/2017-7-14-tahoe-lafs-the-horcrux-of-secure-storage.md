@@ -6,7 +6,6 @@ date: 2017-05-16
 tags: ["storage", "crypto", "horcrux", "decentralized"]
 draft: false
 ---
-##### Tahoe?
  [Tahoe-LAFS](https://tahoe-lafs.org/) is a secure and decentralized system for data storage and backups. Tahoe lends itself to a more developer focused community but it can be installed and used by anyone with the help of the new graphical interface called [Gridsync](https://github.com/gridsync/gridsync) created by Christopher R. Wood and sponsored by [Least Authority](https://leastauthority.com/) & [UX Fund](https://usable.tools/uxfund.html) .
 
 ##### How does it work?
