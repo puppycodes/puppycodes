@@ -17,7 +17,7 @@ title: puppy.codes
 email: alice@jodie.io
 description: > # this means to ignore newlines until "baseurl:"
   tools by @puppy.codes
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "localhost" # the base hostname & protocol for your site
 twitter_username: puppycodes
 github_username:  puppycodes
