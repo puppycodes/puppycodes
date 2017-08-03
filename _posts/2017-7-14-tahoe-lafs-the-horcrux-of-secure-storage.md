@@ -18,10 +18,10 @@ Tahoe LAFS stores a file by creating an encrypted copy of the data and splitting
 
  Luckily! We don't have to murder anyone 😅 to leverage this concept. Using the Horcrux as an example I will attempt to explain how Tahoe works...
 
- ![horcrux](/assets/images/horcrux.jpg)
+ ![horcrux](assets/images/horcrux.jpg)
 
 
-![horcrux](/assets/images/voldemort.png)
+![horcrux](assets/images/voldemort.png)
 
 ##### So what just happened?
 
@@ -34,7 +34,7 @@ First we start with Voldemorts soul... aka: the data you want to backup. Next we
 Why is this good or better than traditional methods? It's important to ask if you want your to be in control of your data. When security and/or storage is handled by a large corporation... sometimes that corporation can be influenced by government pressure or monetary interests and that might not pan out well depending what your goals are. Every time you quickly click through that lil privacy agreement theres a possibility they changed something. Wouldn't it be nicer if you didn't have to read it at all?
 Here's the more technical graph from Tahoe-LAFS:
 
-![horcrux](/assets/images/technical-tahoe.jpg)
+![horcrux](assets/images/technical-tahoe.jpg)
 
 
 Only the individual with the original link otherwise known as FURL, will be able to access the data. This means that there is no possibility of a government or third party being able to access your data without the link!

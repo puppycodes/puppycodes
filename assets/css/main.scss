@@ -13,7 +13,7 @@ padding: 15%;
 
 a, a:visited, a:active, a:hover, h1 {
     color: #1a1a1a;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -119,6 +119,7 @@ main {
 
 .nav-main ul li {
 	padding-bottom: 15px;
+	width: auto;
 }
 
 .nav-main ul {
@@ -288,6 +289,7 @@ ul li {
 float: left;
 list-style-type: none;
 padding-right: 10px;
+width: auto;
 }
 
 footer img {
