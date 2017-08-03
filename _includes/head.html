@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS Feed" href="{{ "/feed/" | absolute_url }}"/>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS Feed" href="{{ "feed/" | absolute_url }}"/>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
@@ -18,10 +18,10 @@
   </style>
   <script>
     {% include loadCSS.js %}
-    loadCSS("{{ '/assets/css/main.css' | prepend: site.baseurl }}");
+    loadCSS("{{ 'assets/css/main.css' | prepend: site.baseurl }}");
     {% include localfont.js %}
   </script>
-  <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}"></noscript>
   {% include favicons.html %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
