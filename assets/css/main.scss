@@ -17,7 +17,8 @@ a, a:visited, a:active, a:hover, h1 {
 }
 
 p {
-	opacity: 1;
+	opacity: 1 !important;
+	color: #1a1a1a !important;
 }
 
 h1, .h1, h2, .h2, h3, .h3, label, legend {
