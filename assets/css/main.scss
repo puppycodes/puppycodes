@@ -190,6 +190,40 @@ font-weight: 500;
     position: relative;
 }
 
+
+
+.post-meta span {
+
+}
+
+
+ .archive {
+	width: 100%;
+	float: left;
+}
+
+ .archive li {
+	    border-bottom: 2px solid #fff;
+}
+
+.archive a {
+color: #1a1a1a;
+font-weight: 500;
+}
+
+.archive > li:not(:last-child):after {
+    content: '';
+}
+
+.archive li {
+    display: block;
+    position: relative;
+		clear: both;
+}
+
+
+
+
 .posts {
 	display: inline-block;
 }
@@ -325,4 +359,17 @@ float: left;
 
 footer ul li img {
 	opacity: .3;
+}
+
+footer ul li {
+
+}
+
+footer ul li {
+	margin-right: 10px;
+}
+
+footer ul li a {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.27) !important;
 }
