@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 require 'json'
 require 'open-uri'
 
+group :jekyll_plugins do
+    gem 'jekyll-livereload'
+end
+
 group :development do
     gem 'foreman'
     gem 'octopress-autoprefixer'
