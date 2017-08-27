@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Reverse Shells"
 description: "quick and dirty reverse shells"
 tags: ["Security", "Offense", "Reverse-Shell"]

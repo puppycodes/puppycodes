@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Hayao Miyazaki and Virtual Sympathy"
 description: "Miyazaki is disgusted by AI demonstration"
 date: 2016-12-20

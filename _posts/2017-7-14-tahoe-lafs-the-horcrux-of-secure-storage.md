@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Tahoe-LAFS, The Horcrux of Secure Storage"
 description: "Tahoe LAFS stores a file by creating an encrypted copy of the data and splitting it into multiple pieces distributed across many servers. This concept is remarkably similar to a Horcrux from Harry Potter."
 date: 2017-05-16

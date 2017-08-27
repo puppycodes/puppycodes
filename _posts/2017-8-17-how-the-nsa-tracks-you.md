@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "How the NSA tracks you"
 description: "William Binney's terrifying talk on the methods used to track everyday citizens and why he couldn't stand it"
 date: 2017-08-17
