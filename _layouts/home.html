@@ -7,12 +7,13 @@ layout: default
 <section class="post wrapper">
   <div class="title">
     <a href="{{ post.url | relative_url }}">
+      <p class="post-meta">
+      <span>{{ post.date | date: "%d" }}</span>
+      <span>{{ post.date | date: "%m" }}</span>
+      <span>{{ post.date | date: "%y" }}</span>
+    </p>
     {{ post.title }}
-    <p class="post-meta">
-    <span>{{ post.date | date: "%d" }}</span>
-    <span>{{ post.date | date: "%m" }}</span>
-    <span>{{ post.date | date: "%y" }}</span>
-  </p>
+
     </a>
 </div>
 </section>

@@ -6,12 +6,12 @@ comments: true
 <div class="wrapper">
   <article class="post">
     <div class="post-header">
+      <p class="post-meta">
+      <span>{{ page.date | date: "%d" }}</span>
+      <span>{{ page.date | date: "%m" }}</span>
+      <span>{{ page.date | date: "%y" }}</span>
+    </p>
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-    <span>{{ page.date | date: "%d" }}</span>
-    <span>{{ page.date | date: "%m" }}</span>
-    <span>{{ page.date | date: "%y" }}</span>
-  </p>
   </div>
     {{ content | markdownify }}
   </article>
