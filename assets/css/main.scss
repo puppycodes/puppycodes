@@ -30,7 +30,7 @@ h1, .h1, h2, .h2, h3, .h3, label, legend {
 	font-family: "Nitti-Light", system, sans-serif;
   font-size: 1em;
   color: #1a1a1a;
-  font-weight: 600;
+  font-weight: 500;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 40px;
@@ -50,6 +50,7 @@ h5 {
 .title {
 	display: inline-block;
 	font-weight: 500;
+
 }
 
 .title a {
@@ -97,7 +98,8 @@ margin-bottom: 40px;
 	padding-right: 5px;
 	left: 0 !important;
 	width: auto !important;
-	line-height: 1.5em !important;
+	position: relative;
+	top: -1px;
 }
 
 main {
@@ -275,8 +277,10 @@ p {
 
 .site-logo {
 	font-size: 140%;
-	width: 100%;
+	width: auto;
 	text-align: left;
+	display: inline-block;
+	float: left;
 }
 
 h2#date
@@ -307,9 +311,7 @@ a.active {
 }
 
 .post-header h1 {
-left: 0 !important;
-line-height: 1.728 !important;
-letter-spacing: normal !important;
+
 
 }
 
