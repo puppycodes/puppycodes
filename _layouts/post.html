@@ -2,19 +2,18 @@
 layout: default
 comments: true
 ---
-
-<div class="wrapper">
-  <article class="post">
-    <div class="post-header">
+<section class="post wrapper">
+  <div class="title">
+    <a href="{{ post.url | relative_url }}">
       <p class="post-meta">
-      <span>{{ page.date | date: "%d" }}</span>
-      <span>{{ page.date | date: "%m" }}</span>
-      <span>{{ page.date | date: "%y" }}</span>
+      <span>{{ page.date | date: "%d %m %y" }}</span>
     </p>
-    <h1 class="post-title">{{ page.title }}</h1>
-  </div>
-    {{ content | markdownify }}
-  </article>
+  <span class="page-title">  {{ page.title }} </span>
 
-  {% include pagination.html %}
+    </a>
 </div>
+<article>
+    {{ content | markdownify }}
+</article>
+  {% include pagination.html %}
+</section>

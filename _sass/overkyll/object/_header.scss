@@ -61,7 +61,7 @@
     z-index: -1;
     opacity: 1;
     transition: opacity 1500ms ease-in-out;
-    
+
     @at-root {
       .site-header.b-lazy::after {
         opacity: 1;
@@ -86,9 +86,7 @@
 .site-title {
   display: block;
   margin: 0;
-  font-size: $base-em * $ms3;
   line-height: 1;
-  color: currentColor;
   text-decoration: none;
 }
 
@@ -96,7 +94,6 @@
 .site-title-hero {
   display: inline-block;
   padding: $base-line/2;
-  font-size: $title1;
   font-weight: 300;
 }
 

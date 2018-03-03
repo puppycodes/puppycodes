@@ -4,7 +4,8 @@ title: archives
 navigation: true
 ---
 
-<div class="posts">
+
+<section class="post wrapper">
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% assign yeardate = site.time | date: "%Y" %}
@@ -12,13 +13,18 @@ navigation: true
   {% if currentdate != yeardate %}
   <!--/posts-archive-->
   {% endif %}
-  <h2 id="date" class="{{currentdate}}">{{ currentdate }}</h2>
-  <ul class="posts-archive">
+<p class="post-year">{{ currentdate }}</p>
   {% endif %}
-  <li class="posts-archive__links"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  <div class="title">
+    <a href="{{ post.url | relative_url }}">
+
+  <span class="page-title">  {{ post.title }} </span>
+    </a>
+</div>
   {% assign date = currentdate %}
   {% if forloop.last %}
-  </ul><!--/posts-archive-last-->
+
   {% endif %}
 {% endfor %}
 <!--/posts-->
+</section>

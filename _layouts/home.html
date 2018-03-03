@@ -8,11 +8,9 @@ layout: default
   <div class="title">
     <a href="{{ post.url | relative_url }}">
       <p class="post-meta">
-      <span>{{ post.date | date: "%d" }}</span>
-      <span>{{ post.date | date: "%m" }}</span>
-      <span>{{ post.date | date: "%y" }}</span>
+      <span>{{ post.date | date: "%d %m %y" }}</span>
     </p>
-    {{ post.title }}
+  <span class="page-title">  {{ post.title }} </span>
 
     </a>
 </div>
