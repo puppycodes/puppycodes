@@ -11,6 +11,7 @@ tags: ["Government", "Plausible Deniability", "Crypto"]
 
 What do we mean when we say rubber hose? We mean torture or indefinite imprisonment (same thing in my book). Here's a link to [read more.](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)
 
+<br>
 
 The latest Trump era mandate… requiring passwords to devices and accounts as part of the extreme vetting procedures is wrong. Human beings should have basic rights to privacy, digital and otherwise. The current argument as it stands, is that well implemented encryption makes our society as a whole more dangerous. Thankfully we can resist this ridiculous notion with some relatively easy to use tools.
 
@@ -21,7 +22,7 @@ The latest Trump era mandate… requiring passwords to devices and accounts as p
 <br>
 
 This quote describes technically how plausible deniability works in cryptography. The idea is to encrypt your data or your entire computer in such a way that its data is indistinguishable from random bits. In other words it would be mathematically impossible to prove there "was" anything encrypted there in the first place. Now this alone might not stop the government or whatever entity your worried about from torturing or holding you until you decrypt the data. Thats why its good to implement two passwords; one for the real data, and one for the decoy data... If your curious whether this kind of thing has any precedent in the United States... [read this.](https://arstechnica.com/tech-policy/2017/03/man-jailed-indefinitely-for-refusing-to-decrypt-hard-drives-loses-appeal/)
-No one should have any love for this cop. It sounds like he's probably guilty. This however sets an incredibly dangerous example, because he hasn't been charged with a crime. If the law is insufficient we need to rewrite it, not subvert basic human rights in the process. This is what the EFF had to say: 
+No one should have any love for this cop. It sounds like he's probably guilty. This however sets an incredibly dangerous example, because he hasn't been charged with a crime. If the law is insufficient we need to rewrite it, not subvert basic human rights in the process. This is what the EFF had to say:
 
 <br>
 <hr>
@@ -29,7 +30,8 @@ No one should have any love for this cop. It sounds like he's probably guilty. T
 <hr>
 <br>
 
-Ok so with that in mind... I think we need tools to protect ourselves from a government that picks and chooses when they want to protect our right to a fair trial. One of the easiest tools i've used to create a plausibly deniable encrypted drive is [VeraCrypt.](https://www.veracrypt.fr/en/Home.html) 
+Ok so with that in mind... I think we need tools to protect ourselves from a government that picks and chooses when they want to protect our right to a fair trial. One of the easiest tools i've used to create a plausibly deniable encrypted drive is [VeraCrypt.](https://www.veracrypt.fr/en/Home.html)
+<br>
 
 <img src="/assets/images/veracrypt.png">
 
@@ -37,12 +39,8 @@ This software is the successor to the famous but curiously discontinued TrueCryp
 
 <br>
 
-For more information about how VeraCrypt works check out the [documentation](https://veracrypt.codeplex.com/wikipage?title=VeraCrypt%20Hidden%20Operating%20System), which can give you detailed instructions and explain how everything works. 
+For more information about how VeraCrypt works check out the [documentation](https://veracrypt.codeplex.com/wikipage?title=VeraCrypt%20Hidden%20Operating%20System), which can give you detailed instructions and explain how everything works.
 
 <br>
 
 🌱 Alice
-
-
-
-
