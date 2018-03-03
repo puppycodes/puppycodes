@@ -281,8 +281,11 @@ color: #4A4A4A;
 
 p {
 	font-size: 14px;
-	margin: 0 !important;
 	line-height: normal;
+}
+
+.article p {
+	margin: 0;
 }
 
 .post-meta {
@@ -298,7 +301,9 @@ p {
 	color: #4A4A4A !important;
 }
 
-
+.post-year {
+	margin-top: 20px;
+}
 
 
 .wrapper {
