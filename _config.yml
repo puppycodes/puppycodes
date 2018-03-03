@@ -16,7 +16,7 @@
 title: puppycodes
 email: alice@jodie.io
 description: tools by @puppy.codes
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost" # the base hostname & protocol for your site
 twitter_username: puppycodes
 github_username:  puppycodes
