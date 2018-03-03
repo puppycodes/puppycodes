@@ -148,6 +148,8 @@ margin-bottom: 40px;
 main {
 	max-width: 800px;
 	width: 100%;
+	display: inline-block;
+	margin-bottom: 40px;
 }
 
 .highlighter-rouge .highlight {
@@ -364,7 +366,9 @@ padding: 0;
 }
 
 footer {
-	margin-top: 10%;
+display: inline-block;
+position: relative;
+width: 100%;
 }
 
 
