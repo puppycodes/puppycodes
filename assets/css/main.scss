@@ -4,6 +4,15 @@
 @import "overkyll-jekyll-theme";
 @import "fonts";
 
+pre, code {
+	border: none;
+}
+
+.highlight {
+		margin: 0px;
+		padding-bottom: 0px;
+}
+
 body {
 font-family: "Avenir Next", system, sans-serif;
 background-color: #F1F1F1;
