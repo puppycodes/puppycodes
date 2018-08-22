@@ -32,4 +32,6 @@ There are some self driven communities that are toxic and bad for the world. Som
 
 It seems to be in our nature as humans to seek togetherness. In my own experience, to deny someone that basic instinct can make them lose perspective. One important point to consider is that social media hasn't been around long enough to gather definitive evidence about it's long term effects. I believe its better to have a free and open internet. Despite the potential for harmful content and horrid things humans are capable of, in my opinion, its better than a capitalist mind experiment. An experiment which is designed to confuse our ability to make informed decisions and undermine the beautiful complexity of our identities.
 
+<br>
+
 🌱 Alice
