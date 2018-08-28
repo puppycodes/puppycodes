@@ -35,3 +35,7 @@ It seems to be in our nature as humans to seek togetherness. In my own experienc
 <br>
 
 🌱 Alice
+
+<br><br>
+
+Written for [Real Review](https://real-review.org/product/real-review-7/) #7
