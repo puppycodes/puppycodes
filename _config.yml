@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: puppycodes
 email: pupcodes@gmail.com
-description: @puppycodes
+description: puppycodes
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost" # the base hostname & protocol for your site
 twitter_username: puppycodes
