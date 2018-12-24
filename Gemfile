@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.5.3'
 
 require 'json'
 require 'open-uri'
