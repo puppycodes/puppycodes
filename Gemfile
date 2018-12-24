@@ -6,6 +6,7 @@ require 'open-uri'
 
 group :jekyll_plugins do
     gem 'jekyll-livereload'
+    gem 'jekyll-pwa-plugin'
 end
 
 group :development do

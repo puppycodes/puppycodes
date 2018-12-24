@@ -1,0 +1,21 @@
+{
+  "short_name": "puppycodes",
+  "name": "puppycodes",
+  "icons": [
+      {
+        "src": "/assets/favicons/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/favicons/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+  "start_url": "/",
+  "background_color": "#f1f1f1",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#495057"
+}
