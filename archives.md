@@ -28,3 +28,7 @@ navigation: true
 {% endfor %}
 <!--/posts-->
 </section>
+
+<br>
+<hr>
+<a href="https://puppycodesarchive.nyc3.cdn.digitaloceanspaces.com">instagram archive</a>
