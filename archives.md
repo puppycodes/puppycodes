@@ -4,6 +4,13 @@ title: archives
 navigation: true
 ---
 
+<span>instagram: <a style="text-decoration:underline !important" href="https://puppycodesarchive.nyc3.cdn.digitaloceanspaces.com/archive.zip">archive.zip</a></span>
+
+
+
+<br>
+
+
 
 <section class="post wrapper">
 {% for post in site.posts %}
@@ -28,7 +35,3 @@ navigation: true
 {% endfor %}
 <!--/posts-->
 </section>
-
-<br>
-<hr>
-<a href="https://puppycodesarchive.nyc3.cdn.digitaloceanspaces.com">instagram archive</a>
