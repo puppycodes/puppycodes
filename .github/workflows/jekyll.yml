@@ -8,13 +8,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6.3'
+          ruby-version: '3.3.5'
           bundler-cache: true
           cache-version: 0
-
-      # Add this step to upgrade RubyGems
-      - name: Upgrade RubyGems
-        run: gem update --system 3.3.22
 
       - name: Setup Pages
         id: pages
