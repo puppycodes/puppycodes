@@ -22,7 +22,8 @@ twitter_username: puppycodes
 github_username:  puppycodes
 
 # Build settings
-markdown: kramdown
+kramdown:
+  input: Kramdown
 
 plugins:
 - jekyll-pwa-plugin
