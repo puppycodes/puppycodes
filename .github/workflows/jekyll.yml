@@ -1,24 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Deploy Jekyll site to Pages
-
-on:
-  push:
-    branches: ["master"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,9 +8,13 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6.3'  # Ruby version
-          bundler-cache: true     # Cache gems
-          cache-version: 0        # Increment if you need to re-download cached gems
+          ruby-version: '2.6.3'
+          bundler-cache: true
+          cache-version: 0
+
+      # Add this step to upgrade RubyGems
+      - name: Upgrade RubyGems
+        run: gem update --system 3.3.22
 
       - name: Setup Pages
         id: pages
@@ -44,14 +27,3 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
