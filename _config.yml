@@ -16,7 +16,7 @@
 title: puppycodes
 email: pupcodes@gmail.com
 description: puppycodes
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/puppycodes" # the subpath of your site, e.g. /blog
 url: "https://puppy.codes" # the base hostname & protocol for your site
 twitter_username: puppycodes
 github_username:  puppycodes
