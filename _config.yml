@@ -43,3 +43,4 @@ pwa:
 
 exclude:
   - Gemfile.lock
+  - vendor
