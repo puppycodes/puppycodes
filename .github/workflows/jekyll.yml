@@ -12,6 +12,10 @@ jobs:
           bundler-cache: true
           cache-version: 0
 
+      # Add this step to upgrade RubyGems
+      - name: Upgrade RubyGems
+        run: gem update --system 3.3.5
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
