@@ -37,6 +37,10 @@ $color-list: (
   "orange": $orange-list
 );
 
-@function color($color, $spectrum) {
-  @return map-get(map-get($color-list, "#{$color}"),"#{$spectrum}");
+// Updated color function using sass:map module
+@use "sass:map";
+
+@function color($color-name, $spectrum-level) {
+  $color-map: map.get($color-list, $color-name);
+  @return map.get($color-map, $spectrum-level);
 }

@@ -6,5 +6,4 @@ $base-font-name: Overpass;
 $title-font-name: Overpass;
 
 // Configuration
-@import "overkyll/overkyll";
-
+@forward "overkyll/overkyll";

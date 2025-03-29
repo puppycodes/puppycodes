@@ -2,6 +2,8 @@
 // Utility classes
 // --------------------------------------------------
 
+@use "../config/typography" as t;
+
 
 // Floats
 // -------------------------
@@ -18,7 +20,7 @@
 }
 
 .center {
-  margin: 0 auto $line-height-base;
+  margin: 0 auto t.$base-line;
   text-align: center;
 }
 
@@ -43,7 +45,7 @@
 
 @mixin list-inline {
   padding: 0;
-  margin: 0 0 $base-line;
+  margin: 0 0 t.$base-line;
   li {
     display: inline-block;
   }
@@ -91,7 +93,7 @@
     height: 16px;
     vertical-align: middle;
     path {
-      fill: $color-grey;
+      fill: #495057; // This is the same value as $color-grey
     }
   }
 }

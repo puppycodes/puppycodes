@@ -1,9 +1,11 @@
 /**
  * Syntax highlighting styles
  */
+
+@use "../config/typography" as t;
  
 .highlight {
-    margin: 0 0 $base_line / 2;
+    margin: 0 0 calc(t.$base-line / 2);
     text-align: left !important; // override .post .figure 
     background: #fff;
 

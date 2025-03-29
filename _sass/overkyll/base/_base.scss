@@ -2,6 +2,9 @@
 /// Very basic styles
 ////
 
+@use "../config/typography" as t;
+@use "../config/colors";
+
 html,
 body {
   box-sizing: border-box;
@@ -40,7 +43,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $smaller;
+  font-size: t.$smaller;
 }
 
 // Links
@@ -48,9 +51,9 @@ figcaption {
 
 a {
   text-decoration: underline;
-  color: $link-color;
+  color: colors.$link-color;
   &:visited {
-    color: $link-color;
+    color: colors.$link-color;
   }
   &:hover {
     text-decoration: none;
@@ -68,7 +71,7 @@ a {
 // -------------------------
 
 ul,ol {
-  margin-bottom: $base-line;
+  margin-bottom: t.$base-line;
   li {
     margin-bottom: 0.5rem;
   }
@@ -98,11 +101,11 @@ ul,ol {
 
 dl {
   margin-top: 0; // Remove browser default
-  margin-bottom: $base-line;
+  margin-bottom: t.$base-line;
 }
 dt,
 dd {
-  line-height: $line-height-base;
+  line-height: t.$line-height-base;
 }
 dt {
   font-weight: bold;
@@ -117,14 +120,14 @@ dd {
 blockquote,
 blockquote p,
 q {
-  color: $color-grey;
+  color: colors.$color-grey;
 }
 
 blockquote {
-  padding-left: $base-line / 2;
-  font-size: $base-em * $ms1;
+  padding-left: calc(t.$base-line / 2);
+  font-size: t.$base-em * t.$ms1;
   letter-spacing: -1px;
-  border-left: 4px solid $color-grey;
+  border-left: 4px solid colors.$color-grey;
   > :last-child {
     margin-bottom: 0;
   }
@@ -132,7 +135,7 @@ blockquote {
 
 blockquote cite {
   display: block;
-  color: $color-grey-dark;
+  color: colors.$color-grey-dark;
 }
 
 blockquote cite:before {
@@ -141,7 +144,7 @@ blockquote cite:before {
 
 blockquote cite a,
 blockquote cite a:visited {
-  color: $color-grey-dark;
+  color: colors.$color-grey-dark;
 }
 
 
@@ -151,7 +154,7 @@ blockquote cite a:visited {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $color-grey-light;
+  border: 1px solid colors.$color-grey-light;
   border-radius: 3px;
   background-color: #eef;
 }

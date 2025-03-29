@@ -2,13 +2,17 @@
 /// Header
 ////
 
+@use "../config/typography" as t;
+@use "../config/mediaqueries" as mq;
+@use "../config/colors";
+
 // Site Header
 //------------------------
 
 // Site header :: general container
 .site-header {
   position: relative;
-  margin-bottom: $base-line*2;
+  margin-bottom: t.$base-line * 2;
   padding: 0 1em;
   text-align: center;
   color: #fff;
@@ -21,10 +25,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: $base-line/2 $base-line;
+  padding: calc(t.$base-line / 2) t.$base-line;
   width: 100%;
   background: transparent;
-  @media #{$medium-up} {
+  @media #{mq.$medium-up} {
     flex-direction: row;
   }
 }
@@ -34,8 +38,8 @@
   padding: 0;
   background-size: cover;
   background-position: center center;
-  background: $color-grey;
-  background-image: linear-gradient(to top, $color-grey 0%, $color-grey-dark 100%);
+  background: colors.$color-grey;
+  background-image: linear-gradient(to top, colors.$color-grey 0%, colors.$color-grey-dark 100%);
   .wrapper {
     display: flex;
     justify-content: center;
@@ -93,7 +97,7 @@
 // Site title hero :: class on site-title for hero title
 .site-title-hero {
   display: inline-block;
-  padding: $base-line/2;
+  padding: calc(t.$base-line / 2);
   font-weight: 300;
 }
 
@@ -119,12 +123,12 @@
 
 // Exergue :: zone just after the header
 .exergue {
-  margin-top: -2*$base-line;
-  padding: $base-line;
+  margin-top: -2 * t.$base-line;
+  padding: t.$base-line;
   width: 100%;
   text-align: center;
   color: #fff;
-  background: $color-grey-dark;
+  background: colors.$color-grey-dark;
   small {
     display: block;
     clear: both;

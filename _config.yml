@@ -23,7 +23,8 @@ github_username:  puppycodes
 
 # Build settings
 kramdown:
-  input: Kramdown
+  input: GFM
+  syntax_highlighter: rouge
 
 plugins:
 - jekyll-pwa-plugin

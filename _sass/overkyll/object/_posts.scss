@@ -2,8 +2,11 @@
 /// Post
 ////
 
+@use "../config/typography" as t;
+@use "../tool/utilities";
+
 .post {
-  padding-bottom: $base-line;
+  padding-bottom: t.$base-line;
   figure {
     text-align: center;
   }
@@ -13,7 +16,7 @@
 }
 
 .posts-archive {
-  @include list-inline();
+  @include utilities.list-inline();
   > li {
     &:not(:last-child):after {
       content: ' - ';

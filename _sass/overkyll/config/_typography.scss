@@ -2,6 +2,9 @@
 /// Typography
 ////
 
+@use "sass:math";
+@use "mediaqueries" as mq;
+
 // Our variables
 //-------------------------------------
 $base-font-name:          -apple-system !default;
@@ -23,7 +26,7 @@ $ms5:                     $ratio * $ms4; /* 2.488 */
 $ms6:                     $ratio * $ms5; /* 2.986 */
 $ms7:                     $ratio * $ms6; /* 3.583 */
 
-$smaller:                 $base-em / $ms1;
+$smaller:                 calc($base-em / $ms1);
 $normal:                  $base-em * $ms0;
 $bigger:                  $base-em * $ms1;
 $title3:                  $base-em * $ms2;
@@ -31,7 +34,7 @@ $title2:                  $base-em * $ms3;
 $title1:                  $base-em * $ms4;
 
 $line-height-base:        $base * $ms2;
-$base-line:               floor(($base-em * $line-height-base));
+$base-line:               math.floor(($base-em * $line-height-base));
 
 body {
   font-family: $base-font-family;
@@ -58,31 +61,31 @@ h1, .h1 { font-size: $title1; }
   font-size: calc( #{$size-down}em + ( (#{$size-up} - #{$size-down}) / #{$size-down} ) * (100vw - #{$breakpoint-down}rem) / (#{$breakpoint-up} - #{$breakpoint-down}) );
 }
 
-@media #{$medium-up} {
+@media #{mq.$medium-up} {
   body {
     font-size: $base-em * $ms0;
-    @include csslock-fontsize($medium,$large,$ms0,$ms1);
+    @include csslock-fontsize(mq.$medium, mq.$large, $ms0, $ms1);
   }
 }
 
-@media #{$large-up} {
+@media #{mq.$large-up} {
   body {
     font-size: $base-em * $ms2;
-    @include csslock-fontsize($large,$xlarge,$ms1,$ms2);
+    @include csslock-fontsize(mq.$large, mq.$xlarge, $ms1, $ms2);
   }
 }
 
-@media #{$xlarge-up} {
+@media #{mq.$xlarge-up} {
   body {
     font-size: $base-em * $ms3;
-    @include csslock-fontsize($xlarge,$xxlarge,$ms2,$ms4);
+    @include csslock-fontsize(mq.$xlarge, mq.$xxlarge, $ms2, $ms4);
   }
 }
 
-@media #{$xxlarge-up} {
+@media #{mq.$xxlarge-up} {
   body {
     font-size: $base-em * $ms4;
-    @include csslock-fontsize($xxlarge,200,$ms4,$ms5);
+    @include csslock-fontsize(mq.$xxlarge, 200, $ms4, $ms5);
   }
 }
 
@@ -100,7 +103,7 @@ h2, .h2,
 h3, .h3 {
   word-wrap: break-word;
   margin-top: $base-line;
-  margin-bottom: ($base-line / 2);
+  margin-bottom: calc($base-line / 2);
 
   small,
   .small {
@@ -111,8 +114,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: ($base-line / 2);
-  margin-bottom: ($base-line / 2);
+  margin-top: calc($base-line / 2);
+  margin-bottom: calc($base-line / 2);
 
   small,
   .small {
@@ -132,5 +135,5 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  margin: 0 0 ($base-line / 2);
+  margin: 0 0 calc($base-line / 2);
 }

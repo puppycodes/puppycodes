@@ -1,30 +1,29 @@
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-
+// Import modules with modern Sass syntax
 // Configuration
-@import "config/open-color";
-@import "config/colors";
-@import "config/mediaqueries";
-@import "config/typography";
+@forward "config/open-color";
+@forward "config/colors";
+@forward "config/mediaqueries";
+@forward "config/typography";
 
 // Tool
-@import "tool/utilities";
+@forward "tool/utilities";
 
 // Base
-@import "base/normalize";
-@import "base/base";
-@import "base/font";
-@import "base/layout";
+@forward "base/normalize";
+@forward "base/base";
+@forward "base/font";
+@forward "base/layout";
 
 // Generic
-@import "generic/normalize-opentype";
-@import "generic/syntax-highlighting";
-@import "generic/skiplink";
-@import "generic/print";
+@forward "generic/normalize-opentype";
+@forward "generic/syntax-highlighting";
+@forward "generic/skiplink";
+@forward "generic/print";
 
 // Object
-@import "object/header";
-@import "object/pagination";
-@import "object/posts";
-@import "object/navigation";
+@forward "object/header";
+@forward "object/pagination";
+@forward "object/posts";
+@forward "object/navigation";

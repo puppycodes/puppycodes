@@ -25,17 +25,17 @@ $orange:                  #f76707;
 
 // Choose color among https://yeun.github.io/open-color/
 
-$color-primary:           color(gray,7) !default;
-$color-primary-light:     color(gray,2) !default;
-$color-primary-dark:      color(gray,9) !default;
+$color-primary:           $gray !default;
+$color-primary-light:     #e9ecef !default; // This is gray-2
+$color-primary-dark:      #212529 !default; // This is gray-9
 
-$color-secondary:         color(red,7) !default;
-$color-secondary-light:   color(red,2) !default;
-$color-secondary-dark:    color(red,8) !default;
+$color-secondary:         $red !default;
+$color-secondary-light:   #ffc9c9 !default; // This is red-2
+$color-secondary-dark:    #e03131 !default; // This is red-8
 
-$color-grey:              color(gray,7) !default;
-$color-grey-light:        color(gray,2) !default;
-$color-grey-dark:         color(gray,9) !default;
+$color-grey:              $gray !default;
+$color-grey-light:        #e9ecef !default; // This is gray-2
+$color-grey-dark:         #212529 !default; // This is gray-9
 
 $title-color:             #000 !default;
 $title-link-color:        #000 !default;

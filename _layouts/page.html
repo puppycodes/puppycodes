@@ -7,9 +7,15 @@ layout: default
 </div>
 
 <script>
-$('.page-link').each(function() {
-    if($(this).attr('href') == window.location.pathname){
-        $(this).addClass('active');
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    var pageLinks = document.querySelectorAll('.page-link');
+    var pathWithoutBaseUrl = window.location.pathname.replace('{{ site.baseurl }}', '') || '/';
+    
+    pageLinks.forEach(function(link) {
+        var href = link.getAttribute('href').replace('{{ site.baseurl }}', '');
+        if (href === pathWithoutBaseUrl) {
+            link.classList.add('active');
+        }
+    });
 });
 </script>

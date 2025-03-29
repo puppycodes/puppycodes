@@ -1,8 +1,9 @@
 ---
 ---
 
-@import "overkyll-jekyll-theme";
-@import "fonts";
+@use "sass:math";
+@forward "overkyll-jekyll-theme";
+@forward "fonts";
 
 pre, code {
 	border: none;

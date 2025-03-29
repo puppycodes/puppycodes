@@ -2,14 +2,19 @@
 /// Pagination
 ////
 
+@use "../config/mediaqueries" as mq;
+@use "../config/typography" as t;
+@use "../config/colors";
+
 .pagination--prevnext {
   clear: both;
-  @media #{$medium-up} {
+  margin: 3rem auto;
+  
+  @media #{mq.$medium-up} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vmin;
   }
-  margin: 3rem auto;
 }
 
 .pagination--prev {
@@ -33,7 +38,7 @@
   position: relative;
   display: block;
   padding: 1em 0;
-  font-size: $smaller;
+  font-size: t.$smaller;
   color: #333;
   &:before {
     position: absolute;
@@ -42,5 +47,5 @@
 }
 
 .pagination--item:active {
-  background: $color-grey-light;
+  background: colors.$color-grey-light;
 }
